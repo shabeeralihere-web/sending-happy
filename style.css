@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* fonts poppins  */
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsbold;
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinssemibold;
+    src: url(./fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/* ================================== */
+
+* {
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+
+
+
+.container {
+
+    width: 100%;
+    max-width: 1285px;
+    margin: 30px auto;
+    padding: 40px;
+}
+
+header {
+    height: 146px;
+
+    background-color: #FFF4E6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+
+    width: 220px;
+    height: 86px;
+}
+
+nav ul {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+ nav ul li:hover{
+    color:#FE8801;
+    cursor:pointer;
+}
+.menu{
+    display: none;
+}
+
+.health-section {
+    display: flex;
+
+}
+
+.health-image {
+    width: 628px;
+    height: 404px;
+}
+
+.health-section h1 {
+    letter-spacing: -3%;
+    font-weight: 700;
+    font-size: 86.41px;
+    line-height: 92.17px;
+}
+
+.health-section p {
+
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 551px;
+}
+
+.health-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.health-section button {
+    width: 224px;
+    height: 61px;
+    margin-top: 20px;
+    padding-top: 20;
+    padding-bottom: 20;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #42C2B2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.service-text h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    max-width: 924%;
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+.service-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 100%;
+
+}
+
+.service-card {
+    position: relative;
+    height: 336px;
+    width: 100%;
+
+
+
+
+}
+
+.service-content {
+    padding: 10px;
+    position: absolute;
+    color: white;
+    width: 100%;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.08) 40%,
+            rgba(0, 0, 0, 0.55) 65%,
+            rgba(0, 0, 0, 0.9) 85%,
+            rgba(0, 0, 0, 1) 100%);
+
+
+
+
+}
+
+.text-heading {
+
+
+    height: 100%;
+
+    padding-top: 322px;
+    width: 100%;
+    padding-left: 10px;
+
+
+
+
+
+    font-size: small;
+}
+
+.service-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    height: 391px;
+    padding: 20px;
+    background-color: #FFF4E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 219.57px;
+    height: 86px;
+
+
+}
+
+.icon-box {
+    display: flex;
+    gap: 12px;
+
+
+}
+
+.img-div {
+    width: 37.1px;
+    height: 36.78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+    border-radius: 50%;
+
+}
+
+.img-div img {
+    width: 38%;
+    height: 38%;
+}
+
+
+
+/* Responsive Desing */
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width:599px) {
+    .health-section {
+        flex-direction: column;
+    }
+
+    .service-image {
+
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+        nav ul{
+        color: #FE8801;
+        display: none;
+    }
+    
+    .menu:hover .menu-items{
+        display: block;
+        
+
+        
+    }
+        .menu{
+    display: block;
+    position: relative;
+
+
+}
+    .menu-items{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: whitesmoke;
+    width: 200px;
+    
+
+    
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+
+    
+}
+
+.menu img{
+
+    width: 35px;
+    height: 35px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:767px) {
+    .health-section{
+        flex-direction: column;
+    }
+    .service-image{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1199px) {}
