@@ -73,9 +73,18 @@ nav ul {
 
 }
 
-.health-image {
-    width: 628px;
-    height: 404px;
+.health-image{
+    overflow: hidden;
+}
+
+.health-image img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.health-image:hover img{
+    transform: scale(1.2);
 }
 
 .health-section h1 {
